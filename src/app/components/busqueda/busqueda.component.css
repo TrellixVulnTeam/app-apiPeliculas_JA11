@@ -1,0 +1,126 @@
+/* Contenedor principal */
+
+.contenedor {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Contenedor de película */
+
+.pelicula {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    box-shadow: 2px 7px 7px 2px rgb(206 206 206);
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    width: 60%;
+}
+
+
+/* Información de la película */
+
+.informacion {
+    display: flex;
+    flex-direction: row;
+}
+
+.detalles {
+    text-align: center;
+    width: 100%;
+}
+
+.detalles h3 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.detalles p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.resaltado {
+    font-weight: bold;
+}
+
+.ficha-tecnica {
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.resultados {
+    color: rgb(184, 107, 107);
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+img {
+    width: 20rem;
+    /* height: 25rem; */
+    border-radius: 2px;
+}
+
+hr {
+    display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1256px) {
+    .pelicula {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+        box-shadow: 2px 7px 7px 2px rgb(206 206 206);
+        background-color: #f6f6f6;
+        border-radius: 4px;
+        width: 50%;
+    }
+    img {
+        width: 100%;
+        height: 30rem;
+    }
+    hr {
+        display: initial;
+    }
+    .detalles h3 {
+        margin: 1rem;
+    }
+    .ficha-tecnica {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .pelicula {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+        box-shadow: 2px 7px 7px 2px rgb(206 206 206);
+        background-color: #f6f6f6;
+        border-radius: 4px;
+        width: 80%;
+    }
+    img {
+        width: 100%;
+        height: 30rem;
+    }
+    hr {
+        display: initial;
+    }
+    .detalles h3 {
+        margin: 1rem;
+    }
+    .ficha-tecnica {
+        padding: 1rem;
+    }
+}

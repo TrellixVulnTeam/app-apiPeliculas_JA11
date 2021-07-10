@@ -1,0 +1,29 @@
+<div class="contenedor">
+
+    <h1>Se han encontrado <span class="resultados">{{resultado}}</span> película(s)</h1>
+
+    <!-- Película -->
+    <div class="pelicula" *ngFor="let peliculaEncontrada of peliculasEncontradas">
+
+        <!-- Portada -->
+        <div class="portada-pelicula">
+            <img src="{{peliculaEncontrada.imagen}}" alt="{{peliculaEncontrada.titulo}}">
+        </div>
+
+        <!-- Detalles -->
+        <div class="detalles">
+            <h3>{{peliculaEncontrada.titulo}}</h3>
+
+            <hr>
+
+            <!-- Ficha técnica -->
+            <div class="ficha-tecnica">
+                <p><span class="resaltado">Fecha de estreno: </span>{{peliculaEncontrada.estreno}}</p>
+                <p class="descripcion">{{(peliculaEncontrada.descripcion | slice: 0:200) + (peliculaEncontrada.descripcion.length > 200 ? '...' : '')}}</p>
+                <p><span class="resaltado">Puntuación: </span>{{peliculaEncontrada.puntuacion}}</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

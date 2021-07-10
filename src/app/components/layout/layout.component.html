@@ -1,0 +1,3 @@
+<app-navbar (resultado)="mostrarResultados($event)" (peliculasEncontradas)="mostrarPeliculas($event)"></app-navbar>
+<app-busqueda [resultado]="resultado" [peliculasEncontradas]="peliculasEncontradas" *ngIf="resultado > 0"></app-busqueda>
+<app-pelicula *ngIf="resultado == 0"></app-pelicula>
