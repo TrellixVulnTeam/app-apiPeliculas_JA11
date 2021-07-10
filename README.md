@@ -1,6 +1,9 @@
 # Aplicación para buscar películas usando llamada a API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+Esta aplicación permite:
+
+- Utilizar el buscador para encontrar el título de una película, mostrando su descripción, su año y su valoración.
+- Ver los últimos estrenos de películas.
 
 ## Development server
 
