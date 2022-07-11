@@ -1,9 +1,9 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand">Movies DB</a>
+        <a class="navbar-brand">JustMovies</a>
         <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Título de película" aria-label="Search" name="busqueda" [(ngModel)]='busqueda'>
-            <button class="btn btn-outline-light" (click)="mostrarResultados()">Buscar</button>
+            <input class="form-control me-2" type="search" placeholder="Write a title to find" aria-label="Search" name="busqueda" [(ngModel)]='busqueda'>
+            <button class="btn btn-dark btn-block" (click)="mostrarResultados()">Search</button>
         </form>
     </div>
 </nav>

@@ -1,6 +1,6 @@
 <div class="contenedor">
 
-    <h1>Últimos estrenos</h1>
+    <!-- <h1>Latest releases</h1> -->
 
     <!-- Película -->
     <div class="pelicula" *ngFor="let pelicula of peliculas">
@@ -14,13 +14,11 @@
         <div class="detalles">
             <h3>{{pelicula.titulo}}</h3>
 
-            <hr>
-
             <!-- Ficha técnica -->
             <div class="ficha-tecnica">
-                <p><span class="resaltado">Fecha de estreno: </span>{{pelicula.estreno}}</p>
-                <p class="descripcion">{{(pelicula.descripcion | slice: 0:200) + (pelicula.descripcion.length > 200 ? '...' : '')}}</p>
-                <p><span class="resaltado">Puntuación: </span>{{pelicula.puntuacion}}</p>
+                <p><span class="resaltado">Release date </span>{{pelicula.estreno}}</p>
+                <p class="descripcion">{{(pelicula.descripcion | slice: 0:200) + (pelicula.descripcion.length > 220 ? '...' : '')}}</p>
+                <p class="score"><span class="resaltado">Rating </span>{{pelicula.puntuacion}}</p>
             </div>
         </div>
 
